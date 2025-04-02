@@ -7,6 +7,10 @@
   --bg-light: #f7f8fc;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* base styles  */
 *,
 *::after,
@@ -44,8 +48,27 @@ button {
 
 header {
   justify-content: space-between;
-  width: 100%;
+ width: 100%; 
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 15%;
+  width: 100%;
+  z-index: 1000;
+  background: white; 
+}
+
+
+
+
+.trabook-brand {
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 
 .header_logo {
   gap: 10px;
@@ -71,6 +94,8 @@ header {
 
 .login_button {
   color: var(--primary-orange);
+  font-weight: bold;
+  font-size: 16px;
   padding: 13px 50px;
   border: none;
   background: transparent;
@@ -104,8 +129,17 @@ header {
   margin-bottom: 24px;
   color: var(--text-black);
 }
+
+.hero_title{
+
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 24px;
+}
 .hero_title span {
   color: var(--primary-orange);
+  font-size: 64px;
+  
 }
 .hero_description {
   color: var(--text-gray);
@@ -145,17 +179,51 @@ header {
 
 /* To Do section */
 .things-to-do {
+  
+
   padding: 120px 20px;
   text-align: center;
   background: #f7f8fc;
 }
-
 .things-to-do h2 {
-  font-size: 28px;
+  
+  font-family: 'Volkhov', serif;
+  font-weight: bold;
+  font-size: 48px;
   font-weight: bold;
   color: #333;
+  
 }
 
+
+
+.plane {
+  display: flex;
+  justify-content: center;
+  gap:70px;margin-top: 0px;
+  }
+
+.plane {
+    position: relative;
+}
+
+
+.plane img {
+  position: absolute;
+  right:20px;
+  top:70px; 
+  
+  
+}
+
+@media (max-width: 768px) {
+  .plane {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
+  }
+  
+}
 .highlight {
   color: #ff5a3c;
 }
@@ -163,23 +231,28 @@ header {
 .things-to-do p {
   color: #666;
   max-width: 600px;
-  margin: 10px auto 30px;
-  font-size: 16px;
+  margin: 0px auto 30px;
+  font-size: 18px;
 }
 
-.cards {
+
+.cards{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 80px;
   flex-wrap: wrap;
 }
 
-.card {
+ 
+
+
+.card{
   background: white;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 250px;
+  max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
   margin-top: 64px;
@@ -188,30 +261,72 @@ header {
 .card:hover {
   transform: translateY(-10px);
 }
+ 
+.card:hover {
+  transform: translateY(-10px);
+}
 
 .card img {
+  
+  
   width: 40px;
   margin-bottom: 10px;
 }
 
+#ttd1{
+  
+    transform: translateX(-80px); /* Moves the image 10px to the left */
+  }
+
+  #ttd2{
+  
+    transform: translateX(-90px); /* Moves the image 10px to the left */
+  }
+
+  #ttd3{
+  
+    transform: translateX(-90px); /* Moves the image 10px to the left */
+  }
+
+
+
+
+
 .card h3 {
-  font-size: 18px;
+  text-align: left;
+  font-size: 24px;
   margin: 10px 0;
 }
 
 .card p {
+  text-align: left;
   font-size: 14px;
   color: #777;
 }
+
 
 /* exclusive section */
 .exclusive {
   text-align: center;
   padding: 120px 20px;
+  
+}
+
+.exclusive h2{
+  font-family: volkhov;
+  font-size: 48px;
+
 }
 .exclusive .card {
   padding: 0px;
   transform: translateY(0);
+}
+
+.exclusive .title_rating p{
+  
+  font-size: 24px;
+  color:black
+
 }
 .exclusive .card .image_container {
   position: relative;
@@ -264,6 +379,17 @@ header {
   border-radius: 4px;
 }
 
+.nav-arrows {
+  position: relative;
+  top:20px
+}
+
+.nav-arrows img {
+  max-width: 100%; 
+  height: auto;
+}
+
+
 /* Vacation plan section */
 .vacation_plan {
   text-align: center;
@@ -271,6 +397,19 @@ header {
   background: #fefcfb;
 }
 
+.vacation_plan h2{
+font-family: volkhov;
+font-size: 45px;
+
+}
+
+
+
+.vacation_plan p{
+
+  align-items: center;
+  top:0px
+}
 .vacation_plan .card {
   padding: 0px;
 }
@@ -305,11 +444,14 @@ header {
   padding: 120px 20px;
   background: #f7f8fc;
 }
-.about_us .about_us_inner {
+
+
+.about_us .container.about_us_inner {
   display: flex;
   align-items: flex-start;
-}
+} 
 .about_us .about_us_inner p {
+  font-family: volkhov;
   margin: 0px;
 }
 .about_us .title {
@@ -320,11 +462,14 @@ header {
   color: var(--primary-orange);
 }
 
+
 /* blogs */
 .blog {
   padding: 120px 20px;
 }
 .blog h2 {
+  font-family: volkhov;
+  font-size: 48px;
   text-align: center;
 }
 

@@ -21,16 +21,18 @@
     <div>
         <header class="flex_container container">
             <div class="header_logo flex_container">
-                <p>Trabook</p>
+                <p><span class="trabook-brand">Trabook</p>
+
                 <img src='./assets/HeaderLogo.svg' alt="logo" />
             </div>
             <nav>
                 <ul class="flex_container">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Destination</a></li>
-                    <li><a href="/">Tour</a></li>
-                    <li><a href="/">Blog</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Destination</a></li>
+
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
             <div class="button_container flex_container">
@@ -38,7 +40,7 @@
                 <button class="signup_button">Sign Up</button>
             </div>
         </header>
-        <section class="hero_container container">
+        <section id= "home" class="hero_container container">
             <div class="flex_container">
                 <div class="hero_text_container">
                     <p class="hero_title">Get started your exciting <span>journey</span>
@@ -81,33 +83,36 @@
                     <button>Explore Now</button>
                 </div>
             </div>
-        </section>
+        </section> 
         <section class="things-to-do">
             <div class="container">
+            <div class="plane">
                 <h2>Things you need <span class="highlight">to do</span></h2>
-                <p>We ensure that you'll embark on a perfectly planned, safe vacation at a price you can afford.</p>
+                <img src="assets/things to do/Element.svg" alt="plane">
+            </div>
+            <p>We ensure that you'll embark on a perfectly planned,<br>safe vacation at a price you can afford.</p>
                 <div class="cards">
                     <div class="card">
-                        <img src="assets/things to do/Group.svg" alt="Sign Up Icon">
+                        <img id ="ttd1" src="assets/things to do/Group.svg" alt="Sign Up Icon">
                         <h3>Sign Up</h3>
                         <p>Complete all the work associated with planning and processing.</p>
                     </div>
-                    <div class="card">
-                        <img src="assets/things to do/Vector (1).svg" alt="Worth of Money Icon">
+                    <div  class="card">
+                        <img id="ttd2"src="assets/things to do/Vector (1).svg" alt="Worth of Money Icon">
                         <h3>Worth of Money</h3>
-                        <p>After successful access, then book from exclusive deals & pricing.</p>
+                        <p>After successful access,then book from exclusive deals & pricing.</p>
                     </div>
-                    <div class="card">
-                        <img src="assets/things to do/Group (1).svg" alt="Exciting Travel Icon">
+                    <div  class="card">
+                        <img id="ttd3" src="assets/things to do/Group (1).svg" alt="Exciting Travel Icon">
                         <h3>Exciting Travel</h3>
                         <p>Start and explore a wide range of exciting travel experiences.</p>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="exclusive container">
+         </section>
+        <section id="services" class="exclusive container">
             <h2>Exclusive <span class="highlight"> deals & discounts</span></h2>
-            <p>Discover our fantastic early booking discounts & start planning your journey.</p>
+            <p>Discover our fantastic early booking discounts<br> & start planning your journey.</p>
             <div class="cards">
                 <div class="card">
                     <div class="image_container">
@@ -115,7 +120,7 @@
                         <button class="book_now_button">Book Now</button>
                     </div>
                     <div class="title_rating flex_container">
-                        <p>Mardin</p>
+                        <p>Madird</p>
                         <div class="flex_container">
                             <img src="./assets/star 1.svg" alt="rating" />
                             <p>4.8</p>
@@ -199,14 +204,18 @@
                 </div>
 
             </div>
+            <div class="nav-arrows">
+                <img src="assets/Slider-btn.svg" alt="Navigation Arrows">
+            </div>
+            
         </section>
-        <section class="vacation_plan container">
+        <section id="tour"class="vacation_plan container">
             <h2>Best <span class="highlight"> Vacation Plan</span></h2>
-            <p>Plan your perfect vacation with our travel agency. Choose among hundreds of all-inclusive offers! </p>
+            <p>Plan your perfect vacation with our travel agency.Choose <br>among hundreds of all-inclusive offers! </p>
             <div class="cards">
                 <div class="card">
                     <div class="image_container">
-                        <img src="./assets/best vaction plans/rome.png" alt="Sign Up Icon">
+                        <img src="./assets/best vaction plans/Image.png" alt="Sign Up Icon">
                     </div>
                     <div class="title_rating flex_container">
                         <p>Rome, Italty</p>
@@ -260,20 +269,25 @@
                 </div>
             </div>
         </section>
-        <section class="about_us">
+        <section id="about"class="about_us">
             <div class="container about_us_inner">
                 <div>
                     <p class="title">What people say<br />
                         <span>about Us.</span>
                     </p>
                     <p>Our Clients send us bunch of smilies with our services and we love them.</p>
+                    <div class="nav-arrows">
+                        <img src="assets/Slider-btn.svg" alt="Navigation Arrows">
+                    </div>
                 </div>
                 <div>
-                    <img src="./assets/Client-1.png" alt="aboutus" />
+                    <img src="./assets/Client-1.png" alt="aboutus"  />
+                    
                 </div>
+                
             </div>
         </section>
-        <section class="blog container">
+        <section id="blog"class="blog container">
             <h2>Get update with
                 <span class="highlight"> latest blog</span>
             </h2>
@@ -380,11 +394,11 @@
                 </div>
             </div>
             <div class="footer_copyrights flex_container container">
-                <p>Copyright, Trabook 2022. All rights reserved.</p>
+                <p>&copy;Copyright, Trabook 2022. All rights reserved.</p>
                 <p>Terms & Conditions</p>
             </div>
         </section>
-    </div>
+    </div> 
 </body>
 
 </html>
