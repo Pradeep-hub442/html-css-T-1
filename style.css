@@ -599,3 +599,78 @@ font-size: 45px;
 .footer_copyrights p {
   margin: 0px;
 }
+
+/* media Queries */
+
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  .hero_container .hero_title {
+    font-size: 40px;
+  }
+  .hero_container .hero_title span {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar.show ul {
+    display: flex;
+  }
+
+  .button_container {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .login_button,
+  .signup_button {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero_container .hero_title {
+    font-size: 28px;
+  }
+  .hero_container .hero_title span {
+    font-size: 36px;
+  }
+  .search .search_inner {
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .things-to-do h2,
+  .exclusive h2,
+  .vacation_plan h2,
+  .blog h2 {
+    font-size: 32px;
+  }
+}
